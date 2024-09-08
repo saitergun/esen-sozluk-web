@@ -1,0 +1,5 @@
+{
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": "always" },
+  "eslint.alwaysShowStatus": true,
+  "css.lint.unknownAtRules": "ignore"
+}

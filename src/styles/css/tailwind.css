@@ -1,0 +1,36 @@
+@tailwind base;
+
+@layer base {
+  html {
+    @apply h-full;
+  }
+
+  html,
+  body {
+    @apply w-full min-h-full;
+  }
+
+  body {
+    @apply h-px bg-alternative-50 text-alternative-800;
+  }
+
+  button {
+    @apply select-none;
+  }
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+  html.no-touch .only-no-touch,
+  html.touch .only-touch {
+    display: block;
+  }
+
+  html.touch .only-no-touch,
+  html.no-touch .only-touch {
+    display: none;
+  }
+}
